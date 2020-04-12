@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    text-decoration: none;
+}
+@keyframes body {
+    from {
+        background-color: rgb(9, 11, 37);
+    }
+    to {
+        background-color: rgb(0, 0, 0);
+    }
+}
+body{
+    animation: body 2s steps(200, start) infinite alternate;
+}
+#rainbow{
+    height: 100%;
+    width: 2px;
+    background-image: linear-gradient(135deg,
+    red, orange, yellow, green,
+    blue, indigo,
+    red, orange, yellow, green,
+    blue, indigo,
+    red, orange, yellow, green,
+    blue, indigo,
+    red);
+}
+#warn{
+    height: 10px;
+    width: 100%;
+    background: repeating-linear-gradient(-45deg,
+    black 0, black 25px, yellow 25px, yellow 50px) top left;
+}
+header{
+    width: 100%;
+    height: 615px;
+    
+}
+nav{
+    display: flex-end;
+}
+.button{
+    margin-top: 4px;
+    margin-right: 4px;
+    width: 30px;
+    height: 23px;
+    border: 1px;
+    text-decoration: rgb(124, 252, 0);
+    border-style: solid;
+    border-color: rgba(126, 252, 0, 0);
+    color: rgb(126, 252, 0);
+    text-align: center;
+    float: right;
+    font-size: 20px;
+}
+.button:hover{
+    background-color: rgba(126, 252, 0, 0.150);
+    border-color: rgb(126, 252, 0);
+    color: lawngreen;
+    transform: scale(1.2);
+}
+.button:active{
+    background-color: rgba(126, 252, 0, 0.041);
+    border-color: rgba(126, 252, 0, 0.61);
+    color: rgba(126, 252, 0, 0.61);
+    transition: color 200ms ease-in 50ms;
+}
+#button{
+    width: 250px;
+    height: 25px;
+    border: 1px;
+    text-decoration: rgb(124, 252, 0);
+    border-style: solid;
+    border-color: rgb(126, 252, 0);
+    color: rgb(126, 252, 0);
+    text-align: center;
+    font-size: 20px;
+    margin-left: 40%;
+    box-shadow: 5px 5px 0px lawngreen;
+
+    transition-property: transform;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+    transition-delay: 50ms;
+    transform: scale(1.0);
+}
+#button:hover{
+    background-color: rgba(126, 252, 0, 0.150);
+    transform: scale(1.2);
+    transition: color 200ms ease-in 50ms;
+    
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.01s;
+    transform: scale(1.1) ;
+}
+#button:active{
+    background-color: rgba(126, 252, 0, 0.041);
+    border-color: rgba(126, 252, 0, 0.61);
+    color: rgba(126, 252, 0, 0.61);
+    box-shadow: 5px 5px 0px rgba(126, 252, 0, 0.61);
+    transition: color 200ms ease-out 50ms;
+
+}
+#text-style{
+    color: lawngreen;
+    font: 40px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-top: -370px;
+    line-height: 80px;
+    letter-spacing: -3px;
+    word-spacing: 5px;
+    
+}
+
+@font-face{
+    font-family: "hell";
+    src: url("hell.otf") format("opentype");
+    unicode-range: U+590-5FF;
+}
+#img-one{
+    width: 200px;
+    height: 200px;
+    margin-left: 42.5%;
+}
+footer{
+    width: 100%;
+    height: 133px;
+    background-color: rgb(0, 0, 0);
+}
+
+#text-style-footer{
+    color: chartreuse;
+    text-align: center;
+    padding-top: 50px;
+}
